@@ -7,24 +7,20 @@ function hamburger() {
   hamburgerMenu.classList.toggle("rizki-active-hamburger");
   navbarMenu.classList.toggle("rizki-show-navbar");
 
-  const hamburger = document.querySelector(".rizki-hamburger-menu");
-  const navList = document.querySelector(".rizki-container-ul-navbar");
-
   let isMenuVisible = false;
-  hamburger.addEventListener("click", () => {
+  hamburgerMenu.addEventListener("click", () => {
     isMenuVisible = !isMenuVisible;
 
     // Toggle kelas untuk animasi muncul
     if (isMenuVisible) {
-      navList.classList.add("rizki-active-ul");
-      navList.classList.remove("rizki-remove-ul");
+      navbarMenu.classList.add("rizki-active-ul");
     } else {
-      navList.classList.remove("rizki-remove-ul");
-      navList.classList.add("rizki-active-ul"); 
+      navbarMenu.classList.remove("rizki-remove-ul");
     }
   });
 }
 
+// Dropdown Menu on Hover
 const navItems = document.querySelectorAll(".rizki-container-ul-navbar .rizki-li-menu");
 
 if (navItems.length) {
