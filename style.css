@@ -1,0 +1,792 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Navbar Start */
+.rizki-navbar {
+    background-color: white;
+    position: fixed;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    z-index: 100;
+}
+
+.rizki-container-navbar {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    height: 50px;
+
+}
+
+.rizki-container-navbar .rizki-logo-navbar {
+    width: 100px;
+}
+
+.rizki-text-logo-navbar {
+    font-size: 35px;
+    color: black;
+}
+
+.rizki-text-logo-navbar span {
+    color: red;
+}
+
+.rizki-container-ul-navbar {
+    position: relative;
+    width: auto;
+    margin: 10px;
+    margin-left: 370px;
+    display: block;
+}
+
+.rizki-container-ul-navbar .rizki-ul-menu {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    gap: 15px;
+}
+
+.rizki-container-ul-navbar .rizki-li-menu {
+    list-style-type: none;
+}
+
+.rizki-container-ul-navbar .rizki-li-menu:first-child {
+    background: red;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-decoration: none;
+}
+
+.rizki-container-ul-navbar .rizki-li-menu:first-child .rizki-a-menu {
+    color: white;
+    position: relative;
+}
+
+.rizki-container-ul-navbar .rizki-a-menu {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+/* Caret Dropdown Start */
+.rizki-caret-dropdown {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    margin-left: 5px;
+    transition: transform 0.6s;
+    -webkit-transition: transform 0.6s;
+    -moz-transition: transform 0.6s;
+    -ms-transition: transform 0.6s;
+    -o-transition: transform 0.6s;
+}
+
+.rizki-caret-active {
+    border-top: 5px solid rgb(255, 0, 0);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+/* Caret Dropdown End */
+
+/* Dropdown ul Navbar Start */
+.rizki-dropdown-navbar {
+    position: absolute;
+    display: none;
+    top: 40px;
+    width: 175px;
+    z-index: 100;
+
+}
+
+.rizki-dropdown-navbar .rizki-ul-dropdown {
+    flex-direction: column;
+    z-index: 100;
+    height: 100%;
+}
+
+.rizki-dropdown-navbar .rizki-li-dropdown {
+    background-color: #f0f0f0;
+    list-style-type: none;
+    padding: 10px;
+}
+
+
+.rizki-dropdown-navbar .rizki-a-dropdown {
+    text-decoration: none;
+    color: black;
+}
+
+.rizki-dropdown-navbar .rizki-li-dropdown:hover {
+    background-color: red;
+}
+
+.rizki-dropdown-navbar .rizki-li-dropdown:hover .rizki-a-dropdown {
+    color: white;
+}
+
+/* Dropdown ul Navbar End */
+
+/* Transisi Garis Underline Start*/
+.rizki-container-ul-navbar .rizki-a-menu::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0;
+    left: 0px;
+    bottom: -5px;
+    border-radius: 20px;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.rizki-container-ul-navbar .rizki-a-menu:hover {
+    color: #f00;
+}
+
+.rizki-container-ul-navbar .rizki-a-menu:hover::after {
+    width: 100%;
+}
+
+/* Transisi Underline End */
+
+/* Navbar End */
+
+/* Main Start */
+.rizki-main {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height: auto;
+    padding: 0;
+}
+
+.rizki-container-main {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.rizki-img-main {
+    width: 650px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.rizki-text-main {
+    margin: 100px;
+    margin-top: 95px;
+    font-weight: bold;
+}
+
+.rizki-h4-main {
+    font-size: 65px;
+    text-align: bold;
+}
+
+.rizki-h4-main span {
+    color: red;
+    text-shadow: 2px 2px 20px rgb(128, 128, 128);
+}
+
+/* Main Icon Start */
+.rizki-icon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.rizki-container-icon {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    padding: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.6s ease-in-out;
+    -webkit-transition: 0.6s ease-in-out;
+    -moz-transition: 0.6s ease-in-out;
+    -ms-transition: 0.6s ease-in-out;
+    -o-transition: 0.6s ease-in-out;
+}
+
+.rizki-container-icon:hover {
+    box-shadow: 2px 2px 30px 2px grey;
+    background: #f2f2f2;
+}
+
+.rizki-container-icon .rizki-icon-img {
+    background: white;
+    border-radius: 20px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.rizki-text-icon {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.rizki-p-icon {
+    font-size: 13px;
+    color: grey;
+}
+
+/* Main Icon End */
+
+/* Main Gambar Mobil Start */
+.rizki-text-car {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.rizki-h4-car {
+    margin-top: 50px;
+}
+
+.rizki-car-img {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 50px;
+    height: 300px;
+}
+
+.rizki-container-car {
+    padding: 5px;
+}
+
+.rizki-img-car {
+    width: 240px;
+    height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 2px 2px 30px 2px rgb(128, 128, 128, 0.2);
+}
+
+/* Main Gambar Mobil End */
+
+/* Main End */
+
+
+/* Footer Start */
+.rizki-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    gap: 20px;
+}
+
+.rizki-container-footer {
+    width: 250px;
+    height: 220px;
+    margin: 5px;
+}
+
+.rizki-h2-footer {
+    margin-top: 21px;
+    padding: 10px;
+    color: red;
+}
+
+.rizki-pelayanan-footer {
+    padding: 10px;
+}
+
+.rizki-a-footer {
+    text-decoration: none;
+    color: black;
+}
+
+.rizki-logo-footer {
+    width: 200px;
+    margin: 10px;
+}
+
+.rizki-p-footer {
+    margin: 10px;
+}
+
+.rizki-sosmed {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.rizki-logo-sosmed {
+    width: 30px;
+}
+
+.rizki-copyright {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+/* Footer End */
+
+/* Css Penumpang.html Start */
+.rizki-card-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.rizki-container-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+.rizki-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.rizki-card h4, p {
+    margin: 7px;
+}
+
+.rizki-img-card {
+    width: 300px;
+    height: 350px;
+}
+
+.rizki-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+/* Css Penumpang.html End*/
+
+/* Css BukuTamu.html Start*/
+.rizki-container-bukutamu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.rizki-bukutamu {
+    width: 50%;
+}
+.rizki-bukutamu h2 {
+    text-align: center;
+    margin-top: 100px;
+}
+.rizki-form-group {
+    margin-bottom: 15px;
+}
+.rizki-form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.rizki-form-group input, .rizki-form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.rizki-form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.rizki-form-group button:hover {
+    background-color: rgb(255, 41, 41);
+}
+/* Css BukuTamu.html End*/
+
+/* Css TentangKami.html Start */
+.rizki-tentang-kami {
+    background-color: #f8f8f8;
+    padding: 60px 20px;
+}
+
+.rizki-container-tentang {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.rizki-container-tentang h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.rizki-container-tentang p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.rizki-container-tentang h3 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.rizki-container-tentang ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.rizki-container-tentang ul li {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+/* Tentang Kami CSS End */
+
+
+
+@media (max-width: 768px) {
+
+    /* Navbar Interaktif Start */
+
+    .rizki-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rizki-container-navbar {
+        margin-left: 1px;
+        height: 50px;
+    }
+
+    .rizki-container-ul-navbar {
+        background-color: #f0f0f0;
+        position: absolute;
+        right: 0px;
+        margin: 0;
+        top: 70px;
+        height: 100vh;
+        display: none;
+    }
+
+    .rizki-container-ul-navbar .rizki-ul-menu {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5px;
+        padding: 5px;
+    }
+
+    .rizki-container-ul-navbar .rizki-li-menu {
+        margin: 5px;
+        padding: 20px;
+    }
+
+    /* Navbar Interaktif End */
+
+    /* Hamburger Interaktif Start */
+    .rizki-hamburger-menu {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .rizki-ham1, .rizki-ham2, .rizki-ham3 {
+        background-color: black;
+        width: 30px;
+        height: 5px;
+        margin: 3px;
+        transition: 0.6s ease-in-out;
+    }
+
+    .rizki-active-hamburger .rizki-ham1 {
+        transform: translate(0, 5px) rotate(45deg);
+    }
+
+    .rizki-active-hamburger .rizki-ham2 {
+        opacity: 0;
+    }
+
+    .rizki-active-hamburger .rizki-ham3 {
+        transform: translate(0, -11px) rotate(-45deg);
+    }
+
+    .rizki-show-navbar {
+        display: block;
+    }
+
+    /* Hamburger Interaktif End */
+
+    /* Dropdown Start */
+    .rizki-dropdown-navbar {
+        position: relative;
+        display: none;
+        top: 40px;
+        width: 175px;
+        z-index: 100;
+    }
+    
+    .rizki-dropdown-navbar .rizki-ul-dropdown {
+        flex-direction: column;
+        z-index: 100;
+        height: 100%;
+    }
+
+    .rizki-container-ul-navbar.active {
+        display: flex; /* Tampilkan saat aktif */
+        animation: slideDown 0.5s forwards;
+    }
+
+    .rizki-container-ul-navbar.closing {
+        animation: slideUp 0.5s forwards;
+    }
+    /* Dropdown End */
+    
+
+    /* Animasi Navbar Start */
+    @keyframes geserDariKanan {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes geserDarKiri {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        to {
+            transform: translateX(-100%);
+            opacity: 0;
+
+        }
+    }
+
+
+    .rizki-container-ul-navbar {
+        z-index: 100;
+        transition: none;
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    .rizki-active-ul {
+        animation: geserDariKanan 0.5s forwards;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .rizki-remove-ul {
+        animation: geserDariKiri 0.5s forwards;
+        opacity: 1;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+}
+
+
+    /* Main Start */
+    .rizki-main {
+        padding: 20px;
+    }
+
+    .rizki-container-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rizki-img-main {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .rizki-text-main {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .rizki-h4-main {
+        font-size: 40px;
+    }
+
+    .rizki-h4-main span {
+        font-size: 35px;
+    }
+
+    /* Main Icon Start */
+    .rizki-icon {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .rizki-container-icon {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .rizki-text-icon {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .rizki-p-icon {
+        font-size: 12px;
+    }
+
+    /* Main Icon End */
+
+    .rizki-text-car {
+        margin-top: 600px
+    }
+
+    /* Main Gambar Start*/
+    .rizki-car-img {
+        background: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .rizki-img-car {
+        width: 350px;
+        height: auto;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        box-shadow: 2px 2px 30px 2px rgb(128, 128, 128, 0.2);
+    }
+
+    /* Main Gambar End*/
+
+
+    /* Footer Start */
+    .rizki-footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .rizki-container-footer {
+        width: 100%;
+        max-width: 200px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .rizki-h2-footer {
+        font-size: 20px;
+    }
+
+    .rizki-pelayanan-footer {
+        font-size: 12px;
+    }
+
+    .rizki-logo-footer {
+        width: 150px;
+    }
+
+    .rizki-sosmed {
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rizki-logo-sosmed {
+        width: 25px;
+    }
+
+    .rizki-copyright {
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    /* Footer End */
+}
